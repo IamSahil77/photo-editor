@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .editor {
+    max-width: 500px;
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 5px;
+  }
+
+  .editor input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+  }
+
+  .editor img {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .editor button {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .editor label {
+    display: block;
+    font-weight: bold;
+  }
