@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photo Editor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>Photo Editor</h1>
   <div class="container">
     <div class="editor">
-      <h1>Photo Editor</h1>
-      <input type="file" id="upload" accept="image/*">
-      <img id="image" src="" alt="Selected Image">
+      <div class="photo-area">
+        <label for="upload" class="file-upload-label" id="fileUploadLabel"><i class="fas fa-cloud-upload-alt"></i>  Choose File</label>
+        <input type="file" id="upload" accept="image/*" class="file-upload-input">
 
-      <label for="brightness">Brightness</label>
-      <input type="range" id="brightness" min="0" max="200" value="100" step="1">
+        <img id="image">
+      </div>
 
-      <label for="contrast">Contrast</label>
-      <input type="range" id="contrast" min="0" max="200" value="100" step="1">
+      <div class="editor-panel">
+        
 
-      <label for="grayscale">Grayscale</label>
-      <input type="range" id="grayscale" min="0" max="100" value="0" step="1">
+        <label for="brightness">Brightness</label>
+        <input type="range" id="brightness" min="0" max="200" value="100" step="1">
 
-      <label for="hue">Hue</label>
-      <input type="range" id="hue" min="0" max="360" value="0" step="1">
+        <label for="contrast">Contrast</label>
+        <input type="range" id="contrast" min="0" max="200" value="100" step="1">
 
-      <button id="reset">Reset</button>
-      <button id="download" disabled>Download</button>
+        <label for="grayscale">Grayscale</label>
+        <input type="range" id="grayscale" min="0" max="100" value="0" step="1">
+
+        <label for="sepia">Sepia</label>
+        <input type="range" id="sepia" min="0" max="100" value="0" step="1">
+
+        <label for="hue">Hue</label>
+        <input type="range" id="hue" min="0" max="360" value="0" step="1">
+
+        <button id="reset">Reset</button>
+        <button id="download" disabled>Download</button>
+      </div>
     </div>
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
