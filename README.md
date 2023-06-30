@@ -7,7 +7,7 @@ This is a simple web application for photo editing using HTML, CSS, and JavaScri
 - Image upload: Select an image file from your local machine to edit.
 - Brightness: Adjust the brightness of the image using a range slider.
 - Contrast: Control the contrast of the image using a range slider.
-- Grayscale: Convert the image to grayscale by adjusting the grayscale level.
+- Grayscale: Convert the image to grayscale by adjusting the level.
 - Hue: Change the hue of the image using a range slider.
 - Reset: Reset all filters to their default values.
 - Download: Download the edited image with the applied filters.
